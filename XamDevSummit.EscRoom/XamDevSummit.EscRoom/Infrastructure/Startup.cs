@@ -13,8 +13,8 @@ namespace XamDevSummit.EscRoom.Infrastructure
         public override void ConfigureServices(IServiceCollection services)
         {
             services.UseBleCentral();
-            services.AddSingleton<IAdapter>(CrossBleAdapter.Current);
-            services.AddSingleton<IUserDialogs>(UserDialogs.Instance);
+            //services.AddSingleton<IAdapter>(CrossBleAdapter.Current);
+            //services.AddSingleton<IUserDialogs>(UserDialogs.Instance);
             services.RegisterStartupTask<GlobalExceptionHandler>();
         }
     }

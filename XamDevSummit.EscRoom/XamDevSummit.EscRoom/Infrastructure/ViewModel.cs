@@ -2,6 +2,7 @@
 using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using Prism.AppModel;
+using Prism.Commands;
 using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
@@ -60,7 +61,6 @@ namespace XamDevSummit.EscapeRoom
         public virtual Task<bool> CanNavigateAsync(INavigationParameters parameters) => Task.FromResult(true);
         [Reactive] public bool IsBusy { get; protected set; }
         [Reactive] public string Title { get; protected set; }
-
         protected void BindBusyCommand(IReactiveCommand reactiveCommand)
             => reactiveCommand
                 .IsExecuting

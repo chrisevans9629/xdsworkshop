@@ -18,7 +18,7 @@ namespace XamDevSummit.EscRoom.Droid
         public override void OnCreate()
         {
             base.OnCreate();
-            Shiny.AndroidShinyHost.Init(this, new Startup());
+            //Shiny.AndroidShinyHost.Init(this, new Startup());
         }
     }
 }

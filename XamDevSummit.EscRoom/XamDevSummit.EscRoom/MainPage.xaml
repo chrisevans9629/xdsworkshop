@@ -11,6 +11,9 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+        <Button Text="Scan" Command="{Binding ScanCommand}"/>
+        
     </StackLayout>
 
 </ContentPage>

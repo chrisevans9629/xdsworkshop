@@ -11,6 +11,7 @@ namespace XamDevSummit.EscRoom
         public MainPage()
         {
             this.InitializeComponent();
+            BindingContext = new MainPageViewModel();
         }
     }
 }
